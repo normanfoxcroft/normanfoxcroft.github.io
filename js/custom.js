@@ -1,12 +1,12 @@
 (function ($) {
 
 	new WOW().init();
-	
+
 	$(window).load(function(){
       $("#navigation").sticky({ topSpacing: 0 });
     });
 
-	jQuery(window).load(function() { 
+	jQuery(window).load(function() {
 		jQuery("#preloader").delay(100).fadeOut("slow");
 		jQuery("#load").delay(100).fadeOut("slow");
 	});
@@ -29,7 +29,7 @@
 			event.preventDefault();
 		});
 	});
-	
+
 	//owl carousel
 	$('#owl-works').owlCarousel({
             items : 4,
@@ -39,7 +39,7 @@
             itemsTabletSmall: [550,2],
             itemsMobile : [480,2],
         });
-	
+
 	//nivo lightbox
 	$('.owl-carousel .item a').nivoLightbox({
 		effect: 'fadeScale',                             // The effect to use when showing the lightbox
@@ -55,8 +55,8 @@
 		onNext: function(element){},                // Callback when the lightbox gallery goes to next item
 		errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
 	});
-	
-	
+
+
 	//parallax
         if ($('.parallax').length)
         {
@@ -70,5 +70,31 @@
             });
 
         }
+
+
+			$('#memorialLink').click(function (){
+				$('html, body').animate({
+				    scrollTop: ($('#memorial').offset().top)
+				},500);
+	    });
+
+			$('#tributeLink').click(function (){
+				$('html, body').animate({
+				    scrollTop: ($('#tribute').offset().top)
+				},500);
+			});
+
+			$('#videoLink').click(function (){
+				$('html, body').animate({
+				    scrollTop: ($('#video').offset().top)
+				},500);
+			});
+
+			$('#galleryLink').click(function (){
+				$('html, body').animate({
+				    scrollTop: ($('#gallery').offset().top)
+				},500);
+			});
+
 
 })(jQuery);

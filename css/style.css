@@ -238,7 +238,8 @@ img.img-responsive {
 
 /* misc */
 hr {
-  margin-top: 10px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 /* margins */
@@ -281,8 +282,8 @@ hr {
 	background: #fff;
 }
 
-.bg-gray {
-	background: #f8f8f8;
+.background {
+  background: url(../img/bg.jpg);
 }
 
 
@@ -304,7 +305,7 @@ hr {
 
 .intro {
 	width:100%;
-	position:relative;	
+	position:relative;
 	background: url(../img/bg1.jpg) no-repeat top center;
 	background-size: cover;
 }
@@ -378,7 +379,7 @@ hr {
     display: block;
     width: 100%;
     height: auto;
-}	
+}
 
 
 /* ===========================
@@ -466,19 +467,19 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 .footer {
 	text-align: center;
 	padding: 50px 0 30px;
-	
+
 }
 
-.footer p {
+/* .footer p {
 	color: #f8f8f8;
-}
+} */
 
 .footer a {
-	color: #fff;
+	color: grey;
 }
 
 .footer a:hover {
-	color: #ccc;
+	color: lightgrey;
 }
 .credits {
     color: #fff;
@@ -488,7 +489,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 Parallax
 ============================= */
 
-#separator {	
+#separator {
 	background-image: url(../img/test.jpg);
 }
 
@@ -500,7 +501,7 @@ Parallax
 	color: #fff;
 }
 
-#separator:after {	
+#separator:after {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -512,19 +513,19 @@ Parallax
 	z-index: -1;
 }
 
-#separator2 {	
+#separator2 {
 	background-image: url(../img/test.jpg);
 }
 
-#separator3 {	
+#separator3 {
 	background-image: url(../img/test.jpg);
 }
 
-#separator4 {	
+#separator4 {
 	background-image: url(../img/test.jpg);
 }
 
-#separator5 {	
+#separator5 {
 	background-image: url(../img/test.jpg);
 }
 
@@ -602,7 +603,7 @@ a.btn:hover {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -619,7 +620,7 @@ a.btn:hover {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -671,7 +672,7 @@ a.btn:hover {
 	.navbar-header .fa {
 		color: #666;
 	}
-	
+
 	.col-xs-6 {
 		margin-bottom: 30px;
 	}
@@ -682,17 +683,26 @@ a.btn:hover {
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
 	}
-	
+
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
 
-	
+
 	.page-scroll a {
 		width: 40px;
 		height: 40px;
 		margin-top: 10px;
 		font-size: 20px;
 	}
-	
+
+}
+
+.section-border {
+  border-bottom: 5px lightgrey double;
+}
+
+.background-footer {
+  background-color: transparent;
+  color: grey !important;
 }
