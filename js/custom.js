@@ -96,5 +96,8 @@
 				},500);
 			});
 
+			audiojs.events.ready(function() {
+				var as = audiojs.createAll();
+			  });
 
 })(jQuery);
