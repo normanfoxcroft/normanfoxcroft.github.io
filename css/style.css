@@ -512,6 +512,22 @@ Parallax
 	z-index: -1;
 }
 
+#separator2 {	
+	background-image: url(../img/parallax-bg2.jpg);
+}
+
+#separator3 {	
+	background-image: url(../img/parallax-bg3.jpg);
+}
+
+#separator4 {	
+	background-image: url(../img/parallax-bg4.jpg);
+}
+
+#separator5 {	
+	background-image: url(../img/parallax-bg5.jpg);
+}
+
 /* ===========================
 --- Elements
 ============================ */
